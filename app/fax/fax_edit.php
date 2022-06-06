@@ -940,6 +940,7 @@
 			echo "<td class='vtable' align='left'>\n";
 			echo "	<select class='formfld' name='fax_email_connection_security'>\n";
 			echo "		<option value=''></option>\n";
+			echo "		<option value='notls' ".(($fax_email_connection_security == 'notls') ? "selected" : null).">NoTLS</option>\n";
 			echo "		<option value='ssl' ".(($fax_email_connection_security == 'ssl') ? "selected" : null).">SSL</option>\n";
 			echo "		<option value='tls' ".(($fax_email_connection_security == 'tls') ? "selected" : null).">TLS</option>\n";
 			echo "	</select>\n";
